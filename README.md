@@ -23,6 +23,8 @@ You may use any programming language to complete this exercise. We strongly enco
     * Read a message from the queue using awslocal, `awslocal sqs receive-message --queue-url http://localhost:4566/000000000000/login-queue`
     * Connect to the Postgres database, verify the table is created
 ```bash
+# password: postgres
+
 psql -d postgres -U postgres  -p 5432 -h localhost -W
 Password: 
 
