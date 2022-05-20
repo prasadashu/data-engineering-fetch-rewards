@@ -1,5 +1,7 @@
 # Fetch Rewards: Data Engineering Take Home #
 
+You may use any programming language to complete this exercise. We strongly encourage you to write a README to explain how to run your application and summarize your thought process.
+
 ## Project Setup
 1. Fork this repository to a personal Github, GitLab, Bitbucket, etc... account. We will not accept PRs to this project.
 2. You will need the following installed on your local machine
@@ -39,9 +41,12 @@ Your objective is to read JSON data containing user login behavior from an AWS S
 Once you have flattened the JSON data object and masked those two fields, write each record to a Postgres database that is made available via [Postgres's docker image](https://hub.docker.com/_/postgres).
 
 You will have to make a number of decisions as you develop this solution:
-* What type of data structures should be used?
-* How will you mask the PII data so that duplicate values can be identified?
-* What will be your strategy for connecting and writing to Postgres?
+
+*    How will you read messages from the queue?
+*    What type of data structures should be used?
+*    How will you mask the PII data so that duplicate values can be identified?
+*    What will be your strategy for connecting and writing to Postgres?
+*    Where and how will your application run?
 
 ## When complete
 Please upload your codebase to a public Git repo (GitHub, Bitbucket, etc.) and email us the link.  Please double-check this is publicly accessible.
