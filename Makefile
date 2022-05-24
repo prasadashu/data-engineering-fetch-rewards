@@ -2,14 +2,6 @@ ifeq (, $(shell which python))
 	$(error "python was not found in $(PATH). For installation instructions go to https://www.python.org/downloads/.")
 endif
 
-ifeq (, $(shell which pip))
-	$(error "python's pip was not found in $(PATH). For installation run `python -m ensurepip --upgrade` in your terminal or run `make pip-install`.")
-endif
-
-ifeq (, $(shell which awslocal))
-	$(error "awslocal was not found in $(PATH). To install run `pip install awscli-local` in your terminal or run `make pip-install`.")
-endif
-
 ifeq (, $(shell which docker))
 	$(error "docker was not found in $(PATH). For installation instructions go to https://docs.docker.com/get-docker/.")
 endif

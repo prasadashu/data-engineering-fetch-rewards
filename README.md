@@ -1,5 +1,7 @@
 # Fetch Rewards: Data Engineering Take Home #
 
+**The recommended time to spend on this take home is 2-3 hours.** Make use of code stubs, doc strings, and a next steps section in your README to elaborate on ways that you would continue fleshing out this project if you had the time. For this assignment an ounce of communication and organization is worth a pound of execution.
+
 ## Project Setup
 1. Fork this repository to a personal Github, GitLab, Bitbucket, etc... account. We will not accept PRs to this project.
 2. You will need the following installed on your local machine
@@ -20,6 +22,10 @@
 4. Test local access
     * Read a message from the queue using awslocal, `awslocal sqs receive-message --queue-url http://localhost:4566/000000000000/login-queue`
     * Connect to the Postgres database, verify the table is created
+    * username = `postgres`
+    * database = `postgres`
+    * password = `postgres`
+
 ```bash
 psql -d postgres -U postgres  -p 5432 -h localhost -W
 Password: 
