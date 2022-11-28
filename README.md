@@ -72,6 +72,6 @@ postgres=# select * from user_logins;
 5. Run `make stop` to terminate the docker containers and optionally run `make clean` to clean up docker resources.
 
 ## All done, now what?
-Upload your codebase to a public Git repo (GitHub, Bitbucket, etc.) and email us the link.  Please double-check this is publicly accessible.
+Upload your codebase to a public Git repo (GitHub, Bitbucket, etc.) and please submit your Link where it says to - under the exercise via Green House our ATS. Please double-check this is publicly accessible.
 
 Please assume the evaluator does not have prior experience executing programs in your chosen language and needs documentation understand how to run your code
