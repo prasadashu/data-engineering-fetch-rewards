@@ -1,0 +1,798 @@
+[
+  {
+    "user_id": "424cdd21-063a-43a7-b91b-7ca1a833afae",
+    "app_version": "2.3.0",
+    "device_type": "android",
+    "ip": "199.172.111.135",
+    "locale": "RU",
+    "device_id": "593-47-5928"
+  },
+  {
+    "user_id": "c0173198-76a8-4e67-bfc2-74eaa3bbff57",
+    "app_version": "0.2.6",
+    "device_type": "ios",
+    "ip": "241.6.88.151",
+    "locale": "PH",
+    "device_id": "104-25-0070"
+  },
+  {
+    "user_id": "66e0635b-ce36-4ec7-aa9e-8a8fca9b83d4",
+    "app_version": "2.2.1",
+    "device_type": "ios",
+    "ip": "130.111.167.54",
+    "locale": null,
+    "device_id": "127-42-0862"
+  },
+  {
+    "user_id": "181452ad-20c3-4e93-86ad-1934c9248903",
+    "app_version": "0.96",
+    "device_type": "android",
+    "ip": "118.79.6.245",
+    "locale": "ID",
+    "device_id": "190-44-3099"
+  },
+  {
+    "user_id": "60b9441c-e39d-406f-bba0-c7ff0e0ee07f",
+    "app_version": "0.4.6",
+    "device_type": "android",
+    "ip": "223.31.97.46",
+    "locale": "FR",
+    "device_id": "149-99-5185"
+  },
+  {
+    "user_id": "5082b1ae-6523-4e3b-a1d8-9750b4407ee8",
+    "app_version": "3.7",
+    "device_type": "android",
+    "ip": "235.167.63.6",
+    "locale": null,
+    "device_id": "346-96-4168"
+  },
+  {
+    "user_id": "5bc74293-3ca1-4f34-bb89-523887d0cc2f",
+    "app_version": "2.2.8",
+    "device_type": "ios",
+    "ip": "240.162.230.101",
+    "locale": "PT",
+    "device_id": "729-06-2799"
+  },
+  {
+    "user_id": "92d8ceec-2e12-49f3-81bd-518fe66971ec",
+    "app_version": "0.5.5",
+    "device_type": "android",
+    "ip": "194.99.130.72",
+    "locale": "BR",
+    "device_id": "762-96-1217"
+  },
+  {
+    "user_id": "05e153b1-4fa1-474c-bd7e-9f74d1c495e7",
+    "app_version": "0.5.0",
+    "device_type": "android",
+    "ip": "163.2.96.136",
+    "locale": null,
+    "device_id": "431-77-3545"
+  },
+  {
+    "user_id": "325c0f3d-da25-45ff-aff4-81816db069bc",
+    "app_version": "0.60",
+    "device_type": "android",
+    "ip": "172.99.101.28",
+    "locale": "RU",
+    "device_id": "649-26-7827"
+  },
+  {
+    "user_id": "692bef80-12db-4f19-b142-60d7cf450eda",
+    "app_version": "6.4.8",
+    "device_type": "ios",
+    "ip": "222.67.255.168",
+    "locale": null,
+    "device_id": "679-63-2563"
+  },
+  {
+    "user_id": "9135d7bf-5992-4cfd-84bb-52b52030a748",
+    "app_version": "0.16",
+    "device_type": "android",
+    "ip": "158.129.94.244",
+    "locale": null,
+    "device_id": "600-30-3931"
+  },
+  {
+    "foo": "oops_wrong_msg_type",
+    "bar": "123"
+  },
+  {
+    "user_id": "6c72164e-1b7a-446a-906d-fedb45d8f718",
+    "app_version": "2.0.8",
+    "device_type": "ios",
+    "ip": "128.4.0.145",
+    "locale": "KE",
+    "device_id": "109-79-7474"
+  },
+  {
+    "user_id": "2d839c07-94fd-4dd8-b535-a21ac271fea3",
+    "app_version": "7.31",
+    "device_type": "ios",
+    "ip": "132.158.62.75",
+    "locale": null,
+    "device_id": "892-24-2405"
+  },
+  {
+    "user_id": "271bd27b-19e9-46c9-a5a4-7c2bb5e35cb0",
+    "app_version": "7.87",
+    "device_type": "ios",
+    "ip": "224.32.130.73",
+    "locale": "PE",
+    "device_id": "638-34-7617"
+  },
+  {
+    "user_id": "5e802e77-427d-4618-b437-ad4fb1461c0d",
+    "app_version": "6.80",
+    "device_type": "ios",
+    "ip": "25.60.74.6",
+    "locale": "ID",
+    "device_id": "502-73-3953"
+  },
+  {
+    "user_id": "901905c7-a1ef-47bf-b28b-8f8d3f8df807",
+    "app_version": "5.56",
+    "device_type": "ios",
+    "ip": "151.44.159.241",
+    "locale": "KR",
+    "device_id": "267-70-3759"
+  },
+  {
+    "user_id": "b018771c-cef7-42af-b595-83bf78cea441",
+    "app_version": "1.1",
+    "device_type": "android",
+    "ip": "119.61.208.245",
+    "locale": "KR",
+    "device_id": "432-44-9858"
+  },
+  {
+    "user_id": "74847efb-c793-4336-b7be-79b46793d05b",
+    "app_version": "5.4.8",
+    "device_type": "android",
+    "ip": "127.96.0.101",
+    "locale": null,
+    "device_id": "421-19-8311"
+  },
+  {
+    "user_id": "ed5d5d23-590e-4c7c-ace0-dc8204630b14",
+    "app_version": "3.0",
+    "device_type": "ios",
+    "ip": "6.148.80.40",
+    "locale": "ID",
+    "device_id": "279-85-6190"
+  },
+  {
+    "user_id": "d34e2144-9952-466e-bfbd-e8777f841cc8",
+    "app_version": "2.2.9",
+    "device_type": "android",
+    "ip": "93.129.57.57",
+    "locale": null,
+    "device_id": "302-51-0183"
+  },
+  {
+    "user_id": "2fa29cb4-c70d-4f13-977c-fb8a7fdb3641",
+    "app_version": "5.60",
+    "device_type": "ios",
+    "ip": "158.131.121.45",
+    "locale": null,
+    "device_id": "196-35-2209"
+  },
+  {
+    "user_id": "e1718797-aee8-42ec-bce7-550342cb2653",
+    "app_version": "6.02",
+    "device_type": "android",
+    "ip": "243.128.95.57",
+    "locale": "CN",
+    "device_id": "257-53-4422"
+  },
+  {
+    "user_id": "fd75e212-7bc4-4bc5-a307-34c7a57b9ecc",
+    "app_version": "0.32",
+    "device_type": "android",
+    "ip": "112.225.36.63",
+    "locale": "RU",
+    "device_id": "557-09-0272"
+  },
+  {
+    "user_id": "1cd051c7-3211-48ea-b3bf-321fafa741e1",
+    "app_version": "0.65",
+    "device_type": "ios",
+    "ip": "5.215.194.173",
+    "locale": "MT",
+    "device_id": "811-02-6439"
+  },
+  {
+    "user_id": "780bf10e-d397-4e02-b7b4-85e5dc096c7b",
+    "app_version": "1.8.0",
+    "device_type": "android",
+    "ip": "4.140.80.249",
+    "locale": "GR",
+    "device_id": "145-32-4505"
+  },
+  {
+    "user_id": "33350db1-0a80-4a75-9909-d143386405f7",
+    "app_version": "5.6.7",
+    "device_type": "android",
+    "ip": "75.57.96.133",
+    "locale": null,
+    "device_id": "579-85-8297"
+  },
+  {
+    "user_id": "806338fd-8c23-4554-a703-bcd1f1549286",
+    "app_version": "2.6",
+    "device_type": "android",
+    "ip": "135.189.41.145",
+    "locale": null,
+    "device_id": "745-55-7948"
+  },
+  {
+    "user_id": "c816a7e6-a7f4-4cf3-ae12-d3c927fbeac5",
+    "app_version": "9.10",
+    "device_type": "ios",
+    "ip": "176.151.65.54",
+    "locale": "PH",
+    "device_id": "314-45-8145"
+  },
+  {
+    "user_id": "f7f0ee55-997a-4e87-946a-68d0dfb35d12",
+    "app_version": "4.19",
+    "device_type": "ios",
+    "ip": "218.144.252.220",
+    "locale": null,
+    "device_id": "311-31-3355"
+  },
+  {
+    "user_id": "3a10965b-8e05-41e4-b5b4-914e5ff21719",
+    "app_version": "0.83",
+    "device_type": "ios",
+    "ip": "142.35.52.37",
+    "locale": "MD",
+    "device_id": "155-56-7494"
+  },
+  {
+    "user_id": "b9ff50c8-d8ee-4038-99f4-35de1fd03332",
+    "app_version": "9.6",
+    "device_type": "ios",
+    "ip": "115.218.27.170",
+    "locale": "RU",
+    "device_id": "723-39-0302"
+  },
+  {
+    "user_id": "e84b79e6-8cd9-4d06-a005-eb9c66b29eba",
+    "app_version": "5.5",
+    "device_type": "ios",
+    "ip": "113.245.106.253",
+    "locale": "NI",
+    "device_id": "585-59-8092"
+  },
+  {
+    "user_id": "e917350b-181b-4976-b3fb-cdd8529737fc",
+    "app_version": "3.3.8",
+    "device_type": "android",
+    "ip": "167.113.106.248",
+    "locale": "ID",
+    "device_id": "362-29-8618"
+  },
+  {
+    "user_id": "05a10a0d-2278-4fe5-b7ae-6f24854bcdfc",
+    "app_version": "5.26",
+    "device_type": "ios",
+    "ip": "202.192.196.150",
+    "locale": "CN",
+    "device_id": "415-51-0493"
+  },
+  {
+    "user_id": "82840e3f-9ac6-4462-9b77-8d5c971ec095",
+    "app_version": "1.1",
+    "device_type": "ios",
+    "ip": "181.208.129.30",
+    "locale": "US",
+    "device_id": "653-91-8869"
+  },
+  {
+    "user_id": "159ad335-0fc1-44b4-90b7-4115d360187d",
+    "app_version": "0.1.1",
+    "device_type": "android",
+    "ip": "210.119.165.204",
+    "locale": "ID",
+    "device_id": "307-04-5243"
+  },
+  {
+    "user_id": "9f98aad0-70e6-4fb6-be4f-f3539ca8e582",
+    "app_version": "0.1.5",
+    "device_type": "android",
+    "ip": "37.222.255.167",
+    "locale": null,
+    "device_id": "467-03-4599"
+  },
+  {
+    "user_id": "bf19b08e-fd9b-4894-a85b-0016d7b96428",
+    "app_version": "3.6",
+    "device_type": "android",
+    "ip": "189.7.106.55",
+    "locale": null,
+    "device_id": "800-15-7241"
+  },
+  {
+    "user_id": "fb644fbc-8a42-4abf-bf75-fbc5900fb187",
+    "app_version": "0.24",
+    "device_type": "android",
+    "ip": "35.241.19.106",
+    "locale": null,
+    "device_id": "878-22-8982"
+  },
+  {
+    "user_id": "c1ae09c9-5721-46bc-8830-b99be558f3b0",
+    "app_version": "9.8.0",
+    "device_type": "android",
+    "ip": "11.120.16.26",
+    "locale": "FR",
+    "device_id": "618-35-0839"
+  },
+  {
+    "user_id": "4a80dec4-e47f-4d1c-a6d6-065c4218d7df",
+    "app_version": "5.3.9",
+    "device_type": "android",
+    "ip": "184.237.67.223",
+    "locale": "CN",
+    "device_id": "670-90-1124"
+  },
+  {
+    "user_id": "3c2abada-e7f1-4862-bb09-477b3c61839a",
+    "app_version": "0.1.6",
+    "device_type": "ios",
+    "ip": "1.134.76.132",
+    "locale": null,
+    "device_id": "559-72-8403"
+  },
+  {
+    "user_id": "87e49911-9beb-42b0-8f4c-da554f5c706b",
+    "app_version": "3.9",
+    "device_type": "android",
+    "ip": "248.178.228.35",
+    "locale": "PA",
+    "device_id": "203-68-6381"
+  },
+  {
+    "user_id": "428af9cd-b1ea-4dbf-831c-7842a4ad415b",
+    "app_version": "0.7.0",
+    "device_type": "ios",
+    "ip": "167.138.200.34",
+    "locale": null,
+    "device_id": "303-74-5630"
+  },
+  {
+    "user_id": "ec808db2-9742-460a-8c9d-6d7458d6f1f5",
+    "app_version": "0.58",
+    "device_type": "android",
+    "ip": "223.195.213.127",
+    "locale": "RU",
+    "device_id": "655-53-9464"
+  },
+  {
+    "user_id": "e24da5d7-5057-4455-ac81-85ff747fdfc2",
+    "app_version": "6.56",
+    "device_type": "android",
+    "ip": "55.190.125.41",
+    "locale": null,
+    "device_id": "471-10-1052"
+  },
+  {
+    "user_id": "e9ad2ea5-de61-4582-9e01-2624580704cb",
+    "app_version": "0.94",
+    "device_type": "ios",
+    "ip": "171.96.251.11",
+    "locale": "CZ",
+    "device_id": "536-45-2256"
+  },
+  {
+    "user_id": "fcab7f15-9d5f-4d7c-9f90-fbed38f3e344",
+    "app_version": "1.0.3",
+    "device_type": "android",
+    "ip": "234.130.234.146",
+    "locale": "UA",
+    "device_id": "727-58-2568"
+  },
+  {
+    "user_id": "607a0bff-c282-4d3b-9b57-b0f1dba212a3",
+    "app_version": "8.3",
+    "device_type": "android",
+    "ip": "214.129.151.46",
+    "locale": "IR",
+    "device_id": "828-37-8820"
+  },
+  {
+    "user_id": "c24b628c-1afd-4f59-a0f0-3db2ae71fd5c",
+    "app_version": "0.2.4",
+    "device_type": "ios",
+    "ip": "65.68.36.18",
+    "locale": "BR",
+    "device_id": "100-63-1284"
+  },
+  {
+    "user_id": "a0c70e0d-6dad-4bf2-b26e-a9f39d2cc69f",
+    "app_version": "0.4.8",
+    "device_type": "android",
+    "ip": "248.247.196.201",
+    "locale": null,
+    "device_id": "572-53-8824"
+  },
+  {
+    "user_id": "27843453-3ecd-46d5-bf1c-43a137c214b5",
+    "app_version": "0.6.6",
+    "device_type": "ios",
+    "ip": "208.131.152.42",
+    "locale": "CA",
+    "device_id": "219-24-5487"
+  },
+  {
+    "user_id": "868f5cea-ab60-4c83-bda0-51ac318ef89d",
+    "app_version": "0.7.9",
+    "device_type": "ios",
+    "ip": "164.254.99.146",
+    "locale": "VN",
+    "device_id": "180-30-7140"
+  },
+  {
+    "user_id": "31bb8d9c-28d0-431a-a130-00b2ec325353",
+    "app_version": "0.61",
+    "device_type": "android",
+    "ip": "45.80.22.34",
+    "locale": null,
+    "device_id": "370-94-2117"
+  },
+  {
+    "user_id": "8570bbf6-c2c8-482b-b44f-7b75ff1b5fc6",
+    "app_version": "8.9.6",
+    "device_type": "ios",
+    "ip": "100.251.138.141",
+    "locale": "PH",
+    "device_id": "139-31-6153"
+  },
+  {
+    "user_id": "5ba7fe55-301d-4bd2-9d36-9729edb2fd45",
+    "app_version": "2.7.2",
+    "device_type": "ios",
+    "ip": "16.253.46.50",
+    "locale": "MK",
+    "device_id": "370-55-4853"
+  },
+  {
+    "user_id": "ba6489ba-84ac-4506-ac48-3da0eaca1255",
+    "app_version": "2.0",
+    "device_type": "android",
+    "ip": "254.179.254.153",
+    "locale": null,
+    "device_id": "171-37-1899"
+  },
+  {
+    "user_id": "8834753a-4860-4598-b02a-ef26b3e44859",
+    "app_version": "0.26",
+    "device_type": "ios",
+    "ip": "175.102.54.112",
+    "locale": "CN",
+    "device_id": "209-26-4561"
+  },
+  {
+    "user_id": "a48f6214-bddd-47e8-84d3-7d34acdc1427",
+    "app_version": "0.84",
+    "device_type": "ios",
+    "ip": "202.104.10.182",
+    "locale": "CU",
+    "device_id": "427-25-3118"
+  },
+  {
+    "user_id": "38b5aedc-9fb3-4f88-a48c-e274c347775d",
+    "app_version": "4.99",
+    "device_type": "ios",
+    "ip": "98.207.159.107",
+    "locale": "CN",
+    "device_id": "761-64-3212"
+  },
+  {
+    "user_id": "1ef6f2aa-5e4c-4885-9e25-e3431efc40f5",
+    "app_version": "0.56",
+    "device_type": "android",
+    "ip": "40.27.18.210",
+    "locale": "ID",
+    "device_id": "614-76-0776"
+  },
+  {
+    "user_id": "8ecdcad9-88b8-492d-80fc-a399a3d245a4",
+    "app_version": "5.9.5",
+    "device_type": "android",
+    "ip": "236.100.138.48",
+    "locale": null,
+    "device_id": "778-55-8263"
+  },
+  {
+    "user_id": "97e35131-aa1e-41a6-9fe7-711726346a68",
+    "app_version": "0.3.9",
+    "device_type": "ios",
+    "ip": "51.10.72.216",
+    "locale": "CN",
+    "device_id": "496-10-3482"
+  },
+  {
+    "user_id": "bdd557b5-c71c-4d26-b31e-49cb87656dfe",
+    "app_version": "2.4",
+    "device_type": "android",
+    "ip": "96.11.44.12",
+    "locale": "SI",
+    "device_id": "650-01-1228"
+  },
+  {
+    "user_id": "e705f3dc-6f05-4b8d-a25a-b3cdbea5c166",
+    "app_version": "3.1.4",
+    "device_type": "android",
+    "ip": "54.75.194.187",
+    "locale": null,
+    "device_id": "439-12-8219"
+  },
+  {
+    "user_id": "26b2aa9b-9060-4188-a297-5d40ad06fbbf",
+    "app_version": "2.00",
+    "device_type": "ios",
+    "ip": "32.130.233.219",
+    "locale": "PA",
+    "device_id": "691-87-6494"
+  },
+  {
+    "user_id": "1f5e38d0-2a07-4ac6-87f1-5ca96d336260",
+    "app_version": "6.0.7",
+    "device_type": "ios",
+    "ip": "200.75.36.110",
+    "locale": null,
+    "device_id": "307-70-1172"
+  },
+  {
+    "user_id": "1cc1a510-1c81-48c3-a806-7fb300c576c8",
+    "app_version": "5.5",
+    "device_type": "android",
+    "ip": "50.135.193.146",
+    "locale": "NG",
+    "device_id": "300-82-7912"
+  },
+  {
+    "user_id": "c9dc3ac8-1029-4880-a8be-9ddf4c8830e7",
+    "app_version": "3.95",
+    "device_type": "android",
+    "ip": "183.231.118.147",
+    "locale": "PT",
+    "device_id": "579-81-4514"
+  },
+  {
+    "user_id": "b46cb700-0bad-4dfd-9b50-8151aacf3f3e",
+    "app_version": "0.8.4",
+    "device_type": "ios",
+    "ip": "216.132.83.216",
+    "locale": "MA",
+    "device_id": "418-14-9511"
+  },
+  {
+    "user_id": "f1769f0a-4538-4029-a3a6-e788df7d4d38",
+    "app_version": "2.7.9",
+    "device_type": "android",
+    "ip": "11.210.90.93",
+    "locale": "CN",
+    "device_id": "118-90-8157"
+  },
+  {
+    "user_id": "08399c7f-f48d-4f1b-9147-f441b5fedc86",
+    "app_version": "2.3",
+    "device_type": "ios",
+    "ip": "166.213.154.102",
+    "locale": "RU",
+    "device_id": "569-81-2919"
+  },
+  {
+    "user_id": "7ac5c71d-90ff-4014-9317-674080b820d5",
+    "app_version": "5.3",
+    "device_type": "ios",
+    "ip": "45.23.234.203",
+    "locale": "FR",
+    "device_id": "423-88-5005"
+  },
+  {
+    "user_id": "fcabe7a9-9b6a-4894-b7a7-11af7d6c4373",
+    "app_version": "4.36",
+    "device_type": "ios",
+    "ip": "166.55.212.198",
+    "locale": "MN",
+    "device_id": "560-62-2568"
+  },
+  {
+    "user_id": "ff754a40-de07-4dee-a893-2e5531e8e55b",
+    "app_version": "0.7.2",
+    "device_type": "android",
+    "ip": "208.226.23.171",
+    "locale": "CN",
+    "device_id": "862-60-3256"
+  },
+  {
+    "user_id": "8b9a126e-4c7b-4589-bc59-ab7571b9d994",
+    "app_version": "0.1.2",
+    "device_type": "ios",
+    "ip": "44.31.189.98",
+    "locale": "MX",
+    "device_id": "688-87-6306"
+  },
+  {
+    "user_id": "1fd1e707-a7cc-4fb1-8d43-3d9d17cc4ad2",
+    "app_version": "0.5.1",
+    "device_type": "ios",
+    "ip": "139.103.204.36",
+    "locale": "ID",
+    "device_id": "665-98-6669"
+  },
+  {
+    "user_id": "71f6da05-40fd-4cb7-bd0e-9d0a856e50c7",
+    "app_version": "6.7.7",
+    "device_type": "android",
+    "ip": "37.22.208.213",
+    "locale": "ID",
+    "device_id": "326-46-8421"
+  },
+  {
+    "user_id": "19e19e1b-bc1a-467d-ae70-ff6e3dfe4e69",
+    "app_version": "0.87",
+    "device_type": "android",
+    "ip": "235.237.92.110",
+    "locale": "RU",
+    "device_id": "258-77-6653"
+  },
+  {
+    "user_id": "813fd857-cb82-4047-aa7d-6a86c22be4c8",
+    "app_version": "3.97",
+    "device_type": "ios",
+    "ip": "133.247.213.20",
+    "locale": "FR",
+    "device_id": "555-88-3264"
+  },
+  {
+    "user_id": "e9c4c6de-b2f9-4c19-a542-9983c66b40ec",
+    "app_version": "9.55",
+    "device_type": "android",
+    "ip": "88.32.137.122",
+    "locale": null,
+    "device_id": "700-36-3459"
+  },
+  {
+    "user_id": "3542a998-0a52-47f6-8358-cb6208c0a697",
+    "app_version": "0.2.8",
+    "device_type": "ios",
+    "ip": "234.125.46.120",
+    "locale": "FR",
+    "device_id": "629-45-4149"
+  },
+  {
+    "user_id": "81118a3c-d266-44b6-b2b2-f9282f4bda96",
+    "app_version": "2.20",
+    "device_type": "ios",
+    "ip": "189.174.64.232",
+    "locale": "VN",
+    "device_id": "727-62-7840"
+  },
+  {
+    "user_id": "3a50f8e7-2adf-4e60-88d3-7c1be36d7b31",
+    "app_version": "0.9.6",
+    "device_type": "android",
+    "ip": "57.179.73.180",
+    "locale": "CN",
+    "device_id": "236-49-6626"
+  },
+  {
+    "user_id": "38a51835-f48d-471b-93a8-66f267ab1e84",
+    "app_version": "0.8.3",
+    "device_type": "ios",
+    "ip": "135.128.90.255",
+    "locale": null,
+    "device_id": "115-35-0981"
+  },
+  {
+    "user_id": "111ce02d-6cd1-407a-9a29-bb181145e321",
+    "app_version": "0.8.3",
+    "device_type": "ios",
+    "ip": "68.71.108.199",
+    "locale": null,
+    "device_id": "471-53-0665"
+  },
+  {
+    "user_id": "98ce1d36-2212-4e1b-bb58-a7ed0911fa49",
+    "app_version": "0.8.8",
+    "device_type": "ios",
+    "ip": "75.226.230.42",
+    "locale": "PT",
+    "device_id": "567-92-8465"
+  },
+  {
+    "user_id": "82031930-ab99-4ad1-8276-1800cd19ed01",
+    "app_version": "2.29",
+    "device_type": "android",
+    "ip": "80.66.237.234",
+    "locale": "ID",
+    "device_id": "223-03-1723"
+  },
+  {
+    "user_id": "94191e2f-4314-4cba-aa38-e662af631842",
+    "app_version": "2.8",
+    "device_type": "ios",
+    "ip": "207.218.48.120",
+    "locale": "DE",
+    "device_id": "604-69-8917"
+  },
+  {
+    "user_id": "e97a928b-ed83-4957-96b3-b4ae07b1be72",
+    "app_version": "3.44",
+    "device_type": "ios",
+    "ip": "23.22.132.194",
+    "locale": null,
+    "device_id": "675-71-8323"
+  },
+  {
+    "user_id": "ae8dfd5a-31b7-4e69-8ef3-d32aac1d191f",
+    "app_version": "0.3.4",
+    "device_type": "android",
+    "ip": "76.186.74.171",
+    "locale": "PL",
+    "device_id": "462-08-0284"
+  },
+  {
+    "user_id": "641b82c1-951f-49ca-8100-617a2b82b5ee",
+    "app_version": "8.6.5",
+    "device_type": "ios",
+    "ip": "229.246.51.56",
+    "locale": "DE",
+    "device_id": "690-34-3947"
+  },
+  {
+    "user_id": "7c65bbae-0174-41df-ab26-44915fb616a8",
+    "app_version": "8.7",
+    "device_type": "android",
+    "ip": "220.172.8.124",
+    "locale": "FR",
+    "device_id": "710-85-4514"
+  },
+  {
+    "user_id": "2ad5985b-dc70-44ca-b3ed-f4246a42f611",
+    "app_version": "1.35",
+    "device_type": "android",
+    "ip": "229.70.21.221",
+    "locale": "PT",
+    "device_id": "284-81-7238"
+  },
+  {
+    "user_id": "ca322b6c-97f8-4075-9663-42cebeb1d26e",
+    "app_version": "0.38",
+    "device_type": "android",
+    "ip": "235.162.61.43",
+    "locale": "BG",
+    "device_id": "812-95-5877"
+  },
+  {
+    "user_id": "d4f4f380-349e-48ac-bdc3-5ee4e29b57c1",
+    "app_version": "3.2.0",
+    "device_type": "ios",
+    "ip": "200.100.97.178",
+    "locale": "FR",
+    "device_id": "317-03-6529"
+  },
+  {
+    "user_id": "792e3e1f-bf84-409e-925c-d653fab4b6be",
+    "app_version": "1.4",
+    "device_type": "ios",
+    "ip": "164.197.201.156",
+    "locale": "TH",
+    "device_id": "116-92-9733"
+  },
+  {
+    "user_id": "4e216e8b-1682-4bc0-9b47-0777b4a77a9e",
+    "app_version": "6.88",
+    "device_type": "ios",
+    "ip": "87.114.1.14",
+    "locale": null,
+    "device_id": "437-41-2278"
+  }
+]

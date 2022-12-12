@@ -32,7 +32,14 @@ You will have to make a number of decisions as you develop this solution:
 *    What will be your strategy for connecting and writing to Postgres?
 *    Where and how will your application run?
 
-**The recommended time to spend on this take home is 2-3 hours.** Make use of code stubs, doc strings, and a next steps section in your README to elaborate on ways that you would continue fleshing out this project if you had the time. For this assignment an ounce of communication and organization is worth a pound of execution.
+**The recommended time to spend on this take home is 2-3 hours.** Make use of code stubs, doc strings, and a next steps section in your README to elaborate on ways that you would continue fleshing out this project if you had the time.
+
+For this assignment an ounce of communication and organization is worth a pound of execution. Please answer the following questions:
+
+* How would you deploy this application in production?
+* What other components would you want to add to make this production ready?
+* How can this application scale with a growing data set.
+* How can PII be recovered later on?
 
 ## Project Setup
 1. Fork this repository to a personal Github, GitLab, Bitbucket, etc... account. We will not accept PRs to this project.
