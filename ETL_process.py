@@ -11,16 +11,27 @@ class ETL_Process():
         """Constructor"""
         return
 
-    def base64_encode(self, plain_string):
-        """Function to encode string into base64"""
-        
-        # Encode string to ASCII value
-        ascii_string = plain_string.encode('ascii')
+    def base64_encode(self, string_parameter, action = "encode"):
+        """Function to encode or decode string using base64"""
 
-        # Encode ASCII string to base64
-        encoded_string = base64.b64encode(ascii_string).decode('utf-8')
+        # Check if action is encoding or decoding
+        if action == "encode":
+            # Encode string to ASCII value
+            ascii_string = string_parameter.encode('ascii')
 
-        return encoded_string
+            # Encode ASCII string to base64
+            encoded_string = base64.b64encode(ascii_string).decode('utf-8')
+
+            # Return the encoded string
+            return encoded_string
+
+        # Else decode the encrypted string
+        elif action == "decode":
+            # Decode base64 encrypted string
+            decoded_string = base64.b64decode(string_parameter).decode('utf-8')
+
+            # Return the decoded string
+            return decoded_string
 
     def get_messages(self):
         """Function to receive messages from SQS Queue"""
@@ -115,6 +126,9 @@ def main():
     # Invoke an object for the class
     etl_process_object = ETL_Process()
 
+    etl_process_object.base64_encode("MTk5LjE3Mi4xMTEuMTM1", action="decode")
+
+    """
     # Extract messages from SQS Queue
     messages = etl_process_object.get_messages()
 
@@ -123,6 +137,7 @@ def main():
 
     # Load data to Postgres
     etl_process_object.load_data_postgre(message_list)
+    """
 
 
 # Calling the main function
