@@ -48,7 +48,7 @@ class ETL_Process():
             # Return the decoded string
             return decoded_string
 
-    def get_messages(self):
+    def get_messages(self, max_messages=10, wait_time=10):
         """Function to receive messages from SQS Queue"""
 
         # Instantiate SQS Client
@@ -57,8 +57,8 @@ class ETL_Process():
         # Receive messages from queue
         response = sqs_client.receive_message(
             QueueUrl="http://localhost:4566/000000000000/login-queue",
-            MaxNumberOfMessages=10,
-            WaitTimeSeconds=10
+            MaxNumberOfMessages=max_messages,
+            WaitTimeSeconds=wait_time
         )
 
         # Get messages from SQS
