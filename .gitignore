@@ -48,3 +48,8 @@ Thumbs.db
 *.mov
 *.wmv
 
+# VS Code
+.vscode/*
+
+# Python custom environment
+data-engineering/*
