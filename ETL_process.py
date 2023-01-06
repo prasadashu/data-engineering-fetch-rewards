@@ -3,7 +3,7 @@ import json
 import base64
 import psycopg2
 import configparser
-from datetime import datetime, timezone
+from datetime import datetime
 
 class ETL_Process():
     """Class for performing ETL Process"""
