@@ -2,13 +2,27 @@ import boto3
 import json
 import base64
 import psycopg2
+import configparser
 from datetime import datetime, timezone
 
 class ETL_Process():
     """Class for performing ETL Process"""
 
     def __init__(self):
-        """Constructor"""
+        """Constructor to get Postgres credentials"""
+
+        # Instantiate the config parser
+        config = configparser.ConfigParser()
+
+        # Read the config file
+        config.read('postgres.ini')
+
+        # Get config details
+        self.__username = config.get('postgres', 'username')
+        self.__password = config.get('postgres', 'password')
+        self.__host = config.get('postgres', 'host')
+        self.__database = config.get('postgres', 'database')
+        
         return
 
     def base64_encode(self, string_parameter, action = "encode"):
