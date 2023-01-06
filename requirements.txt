@@ -1,1 +1,10 @@
 awscli-local==0.20
+boto3==1.26.43
+botocore==1.29.43
+jmespath==1.0.1
+localstack-client==1.39
+psycopg2-binary==2.9.5
+python-dateutil==2.8.2
+s3transfer==0.6.0
+six==1.16.0
+urllib3==1.26.13

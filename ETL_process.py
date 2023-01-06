@@ -151,6 +151,9 @@ def main():
     # Load data to Postgres
     etl_process_object.load_data_postgre(message_list)
 
+    # Return from the main function
+    return
+
 
 # Calling the main function
 if __name__ == "__main__":
