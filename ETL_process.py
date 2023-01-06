@@ -102,7 +102,7 @@ class ETL_Process():
             host = self.base64_encode(self.__host, action="decode"),
             database = self.base64_encode(self.__database, action="decode"),
             user = self.base64_encode(self.__username, action="decode"),
-            password = self.base64_encode(self.__password, action="password")
+            password = self.base64_encode(self.__password, action="decode")
         )
 
         # Create a Cursor
