@@ -22,3 +22,7 @@ stop:
 	docker-compose down --remove-orphans
 clean:
 	docker system prune -f
+
+.PHONY: python
+perform-etl:
+	python ETL_process.py
