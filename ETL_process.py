@@ -22,7 +22,7 @@ class ETL_Process():
         self.__password = config.get('postgres', 'password')
         self.__host = config.get('postgres', 'host')
         self.__database = config.get('postgres', 'database')
-        
+
         return
 
     def base64_encode(self, string_parameter, action = "encode"):
@@ -99,10 +99,10 @@ class ETL_Process():
 
         # Connect to PostgreSQL
         postgres_conn = psycopg2.connect(
-            host = 'localhost',
-            database = 'postgres',
-            user = 'postgres',
-            password = 'postgres'
+            host = self.base64_encode(self.__host, action="decode"),
+            database = self.base64_encode(self.__database, action="decode"),
+            user = self.base64_encode(self.__username, action="decode"),
+            password = self.base64_encode(self.__password, action="password")
         )
 
         # Create a Cursor
