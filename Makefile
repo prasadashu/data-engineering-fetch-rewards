@@ -14,6 +14,8 @@ endif
 .PHONY: dependencies
 pip-install:
 	python -m ensurepip --upgrade && pip install -r requirements.txt
+aws-configure:
+	bash aws_configure.sh
 
 .PHONY: docker
 start:
