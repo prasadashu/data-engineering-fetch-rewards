@@ -1,7 +1,9 @@
 awscli-local==0.20
+awscli==1.27.44
 boto3==1.26.43
 botocore==1.29.43
 jmespath==1.0.1
+launchpadlib==1.10.13
 localstack-client==1.39
 psycopg2-binary==2.9.5
 python-dateutil==2.8.2
