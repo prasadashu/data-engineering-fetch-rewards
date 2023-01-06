@@ -23,6 +23,7 @@ class ETL_Process():
         self.__host = config.get('postgres', 'host')
         self.__database = config.get('postgres', 'database')
 
+        # Return from the constructor
         return
 
     def base64_encode(self, string_parameter, action = "encode"):
@@ -132,6 +133,7 @@ class ETL_Process():
             # Commit data to Postgres
             postgres_conn.commit()
 
+        # Return from the function
         return
 
 def main():
