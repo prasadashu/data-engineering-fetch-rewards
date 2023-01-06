@@ -140,9 +140,6 @@ def main():
     # Invoke an object for the class
     etl_process_object = ETL_Process()
 
-    etl_process_object.base64_encode("MTk5LjE3Mi4xMTEuMTM1", action="decode")
-
-    """
     # Extract messages from SQS Queue
     messages = etl_process_object.get_messages()
 
@@ -151,7 +148,6 @@ def main():
 
     # Load data to Postgres
     etl_process_object.load_data_postgre(message_list)
-    """
 
 
 # Calling the main function
