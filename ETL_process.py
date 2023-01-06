@@ -144,12 +144,15 @@ def main():
     etl_process_object = ETL_Process()
 
     # Extract messages from SQS Queue
+    print("Fetching messages from SQS Queue...")
     messages = etl_process_object.get_messages()
 
     # Transform IIPs from the messages
+    print("Masking PIIs from the messages...")
     message_list = etl_process_object.transform_data(messages)
 
     # Load data to Postgres
+    print("Loading messages to Postgres...")
     etl_process_object.load_data_postgre(message_list)
 
     # Return from the main function
