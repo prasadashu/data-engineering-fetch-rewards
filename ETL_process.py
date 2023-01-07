@@ -71,8 +71,7 @@ class ETL_Process():
             )
         except exceptions.ParamValidationError as param_exceptions:
             # Print error while parsing parameters
-            print("Error: \n")
-            print(param_exceptions)
+            print("Error - " + str(param_exceptions))
 
             # Exit from function
             return
@@ -97,8 +96,7 @@ class ETL_Process():
                 
         except TypeError as type_error:
             # Print the message is empty
-            print("Error: \n")
-            print(type_error)
+            print("Error - " + str(type_error))
 
             # Return from the function
             return
