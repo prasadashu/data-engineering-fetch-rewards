@@ -3,12 +3,13 @@ import json
 import base64
 import psycopg2
 import configparser
+import argparse
 from datetime import datetime
 
 class ETL_Process():
     """Class for performing ETL Process"""
 
-    def __init__(self):
+    def __init__(self, endpoint_url, queue_name, wait_time, max_messages):
         """Constructor to get Postgres credentials"""
 
         # Instantiate the config parser
@@ -22,6 +23,12 @@ class ETL_Process():
         self.__password = config.get('postgres', 'password')
         self.__host = config.get('postgres', 'host')
         self.__database = config.get('postgres', 'database')
+
+        # Get argument values
+        self.__endpoint_url = endpoint_url
+        self.__queue_name = queue_name
+        self.__wait_time = wait_time
+        self.__max_messages = max_messages
 
         # Return from the constructor
         return
@@ -52,13 +59,13 @@ class ETL_Process():
         """Function to receive messages from SQS Queue"""
 
         # Instantiate SQS Client
-        sqs_client = boto3.client("sqs", endpoint_url = "http://localhost:4566")
+        sqs_client = boto3.client("sqs", endpoint_url = self.__endpoint_url)
 
         # Receive messages from queue
         response = sqs_client.receive_message(
-            QueueUrl="http://localhost:4566/000000000000/login-queue",
-            MaxNumberOfMessages=max_messages,
-            WaitTimeSeconds=wait_time
+            QueueUrl= self.__endpoint_url + self.__queue_name,
+            MaxNumberOfMessages=self.__max_messages,
+            WaitTimeSeconds=self.__wait_time
         )
 
         # Get messages from SQS
@@ -144,8 +151,32 @@ class ETL_Process():
 def main():
     """The Main Function"""
 
+    # Instantiate the argparser
+    parser = argparse.ArgumentParser(
+        prog = "Extract Transform Load - Process",
+        description = "Program extracts data from SQS queue \n \
+                       Transforms PIIs in the data \n \
+                       Loads the processed data into Postgres",
+        epilog = "Please raise an issue for code modifications"
+    )
+
+    # Add arguments
+    parser.add_argument('-e', '--endpoint-url', help = "Pass the endpoint URL here")
+    parser.add_argument('-q', '--queue-name', help = "Pass the queue URL here")
+    parser.add_argument('-t', '--wait-time', help = "Pass the wait time here")
+    parser.add_argument('-m', '--max-messages', help = "Pass the max messages to be pulled from SQS queue here")
+
+    # Parse the arguments
+    args = parser.parse_args()
+
+    # Get value for each argument
+    endpoint_url = args.e
+    queue_name = args.q
+    wait_time = args.t
+    max_messages = args.m
+
     # Invoke an object for the class
-    etl_process_object = ETL_Process()
+    etl_process_object = ETL_Process(endpoint_url, queue_name, wait_time, max_messages)
 
     # Extract messages from SQS Queue
     print("Fetching messages from SQS Queue...")
