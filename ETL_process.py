@@ -5,6 +5,7 @@ import psycopg2
 import configparser
 import argparse
 from datetime import datetime
+from botocore import exceptions
 
 class ETL_Process():
     """Class for performing ETL Process"""
@@ -62,11 +63,19 @@ class ETL_Process():
         sqs_client = boto3.client("sqs", endpoint_url = self.__endpoint_url)
 
         # Receive messages from queue
-        response = sqs_client.receive_message(
-            QueueUrl= self.__endpoint_url + self.__queue_name,
-            MaxNumberOfMessages=self.__max_messages,
-            WaitTimeSeconds=self.__wait_time
-        )
+        try:
+            response = sqs_client.receive_message(
+                QueueUrl= self.__endpoint_url + '/' + self.__queue_name,
+                MaxNumberOfMessages=self.__max_messages,
+                WaitTimeSeconds=self.__wait_time
+            )
+        except exceptions.ParamValidationError as param_exceptions:
+            # Print error while parsing parameters
+            print("Error: \n")
+            print(param_exceptions)
+
+            # Exit from function
+            return
 
         # Get messages from SQS
         messages = response['Messages']
@@ -154,26 +163,26 @@ def main():
     # Instantiate the argparser
     parser = argparse.ArgumentParser(
         prog = "Extract Transform Load - Process",
-        description = "Program extracts data from SQS queue \n \
-                       Transforms PIIs in the data \n \
+        description = "Program extracts data from SQS queue - \
+                       Transforms PIIs in the data - \
                        Loads the processed data into Postgres",
         epilog = "Please raise an issue for code modifications"
     )
 
     # Add arguments
-    parser.add_argument('-e', '--endpoint-url', help = "Pass the endpoint URL here")
-    parser.add_argument('-q', '--queue-name', help = "Pass the queue URL here")
-    parser.add_argument('-t', '--wait-time', help = "Pass the wait time here")
-    parser.add_argument('-m', '--max-messages', help = "Pass the max messages to be pulled from SQS queue here")
+    parser.add_argument('-e', '--endpoint-url', required = True ,help = "Pass the endpoint URL here")
+    parser.add_argument('-q', '--queue-name', required = True ,help = "Pass the queue URL here")
+    parser.add_argument('-t', '--wait-time', type = int ,help = "Pass the wait time here")
+    parser.add_argument('-m', '--max-messages', type = int ,help = "Pass the max messages to be pulled from SQS queue here")
 
     # Parse the arguments
-    args = parser.parse_args()
+    args = vars(parser.parse_args())
 
     # Get value for each argument
-    endpoint_url = args.e
-    queue_name = args.q
-    wait_time = args.t
-    max_messages = args.m
+    endpoint_url = args['endpoint_url']
+    queue_name = args['queue_name']
+    wait_time = args['wait_time']
+    max_messages = args['max_messages']
 
     # Invoke an object for the class
     etl_process_object = ETL_Process(endpoint_url, queue_name, wait_time, max_messages)
