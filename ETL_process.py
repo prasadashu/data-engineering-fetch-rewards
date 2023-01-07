@@ -89,6 +89,20 @@ class ETL_Process():
         # Decalre empty message list
         message_list = []
 
+        # Check if "messages" list is empty
+        try:
+            if len(messages) == 0:
+                # Raise TypeError
+                raise TypeError("Message list is empty")
+                
+        except TypeError as type_error:
+            # Print the message is empty
+            print("Error: \n")
+            print(type_error)
+
+            # Return from the function
+            return
+
         # Iterate through the messages
         for message in messages:
             # Get "Body" of the message into JSON/Dictionary format
