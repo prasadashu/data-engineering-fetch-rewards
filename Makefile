@@ -10,10 +10,13 @@ ifeq (, $(shell which docker-compose))
 	$(error "docker-compose was not found in $(PATH). For installation instructions go to https://docs.docker.com/compose/install/.")
 endif
 
+.PHONY: environment
+create-environment:
+	python -m venv data-engineering
 
 .PHONY: dependencies
 pip-install:
-	python -m ensurepip --upgrade && pip install -r requirements.txt
+	pip install -r requirements.txt
 aws-configure:
 	bash aws_configure.sh
 
