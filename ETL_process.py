@@ -90,6 +90,7 @@ class ETL_Process():
             message_body['ip'] = base64_ip
             message_body['device_id'] = base64_device_id
             
+            # Append data to message list
             message_list.append(message_body)
 
         # Return from function
@@ -132,6 +133,9 @@ class ETL_Process():
 
             # Commit data to Postgres
             postgres_conn.commit()
+
+        # Close connection to Postgres
+        postgres_conn.close()
 
         # Return from the function
         return
