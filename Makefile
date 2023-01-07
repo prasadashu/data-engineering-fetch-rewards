@@ -13,6 +13,7 @@ endif
 .PHONY: environment
 create-environment:
 	python -m venv data-engineering
+	source data-engineering/bin/activate
 
 .PHONY: dependencies
 pip-install:
