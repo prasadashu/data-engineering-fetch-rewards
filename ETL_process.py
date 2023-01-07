@@ -56,7 +56,7 @@ class ETL_Process():
             # Return the decoded string
             return decoded_string
 
-    def get_messages(self, max_messages=10, wait_time=10):
+    def get_messages(self):
         """Function to receive messages from SQS Queue"""
 
         # Instantiate SQS Client
@@ -186,8 +186,8 @@ def main():
     # Add arguments
     parser.add_argument('-e', '--endpoint-url', required = True ,help = "Pass the endpoint URL here")
     parser.add_argument('-q', '--queue-name', required = True ,help = "Pass the queue URL here")
-    parser.add_argument('-t', '--wait-time', type = int ,help = "Pass the wait time here")
-    parser.add_argument('-m', '--max-messages', type = int ,help = "Pass the max messages to be pulled from SQS queue here")
+    parser.add_argument('-t', '--wait-time', type = int, default = 10, help = "Pass the wait time here")
+    parser.add_argument('-m', '--max-messages', type = int, default = 10, help = "Pass the max messages to be pulled from SQS queue here")
 
     # Parse the arguments
     args = vars(parser.parse_args())
