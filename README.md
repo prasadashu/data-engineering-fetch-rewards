@@ -38,12 +38,12 @@ make perform-etl
 ## Checking messages loaded in Postgres
 - To validate the messages loaded in Postgres
 ```bash
-psql -d postgres -U postgres  -p 5432 -h localhost -W
+psql -d postgres -U postgres -p 5432 -h localhost -W
 ```
 - Credentials and database information
--- **username**=`postgres`
--- **password**=`postgres`
--- **database**=`postgres`
+    - **username**=`postgres`
+    - **password**=`postgres`
+    - **database**=`postgres`
 
 - If `psql` binary is not installed on Ubuntu based distros, install it using the below command.
 ```bash
