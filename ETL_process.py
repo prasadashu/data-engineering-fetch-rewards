@@ -4,6 +4,7 @@ import base64
 import psycopg2
 import configparser
 import argparse
+import sys
 from datetime import datetime
 from botocore import exceptions
 from botocore import errorfactory
@@ -74,8 +75,8 @@ class ETL_Process():
             # Print error while parsing parameters
             print("Error - " + str(exceptions))
 
-            # Exit from function
-            return
+            # Exit from program
+            sys.exit()
 
         # Get messages from SQS
         messages = response['Messages']
@@ -99,8 +100,8 @@ class ETL_Process():
             # Print the message is empty
             print("Error - " + str(type_error))
 
-            # Return from the function
-            return
+            # Exit from program
+            sys.exit()
 
         # Iterate through the messages
         for message in messages:
@@ -137,8 +138,8 @@ class ETL_Process():
             # Print the "message_list" is empty
             print("Error - " + str(type_error))
 
-            # Return from the function
-            return
+            # Exit from program
+            sys.exit()
 
 
         # Connect to PostgreSQL
