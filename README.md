@@ -49,3 +49,10 @@ psql -d postgres -U postgres -p 5432 -h localhost -W
 ```bash
 apt install postgresql-client
 ```
+
+## Decrypting masked PIIs
+- The `ip` and `device_id` fields are masked using base64 encryption.
+- To recover the encrypted fields, we can use the below command.
+```bash
+echo -n "<sample_base64_encrypted_string>" | base64 --decrypt
+```
