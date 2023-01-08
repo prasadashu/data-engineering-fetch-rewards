@@ -5,7 +5,7 @@
 1. Clone this repo
 ```bash
 git clone https://github.com/prasadashu/data-engineering-fetch-rewards.git
-``
+```
 
 2. Go into the cloned repo
 ```bash
