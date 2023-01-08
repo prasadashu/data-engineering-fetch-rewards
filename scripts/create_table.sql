@@ -6,6 +6,6 @@ CREATE TABLE IF NOT EXISTS user_logins(
     masked_ip           varchar(256),
     masked_device_id    varchar(256),
     locale              varchar(32),
-    app_version         varchar(5),
+    app_version         varchar(15),
     create_date         date
 );
