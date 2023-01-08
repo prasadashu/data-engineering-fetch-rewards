@@ -26,4 +26,4 @@ clean:
 
 .PHONY: python
 perform-etl:
-	python ETL_process.py
+	python ETL_process.py --endpoint-url http://localhost:4566 --queue-name login-queue --max-messages 25
