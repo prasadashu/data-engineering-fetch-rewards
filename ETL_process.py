@@ -6,6 +6,7 @@ import configparser
 import argparse
 from datetime import datetime
 from botocore import exceptions
+from botocore import errorfactory
 
 class ETL_Process():
     """Class for performing ETL Process"""
@@ -69,9 +70,9 @@ class ETL_Process():
                 MaxNumberOfMessages=self.__max_messages,
                 WaitTimeSeconds=self.__wait_time
             )
-        except exceptions.ParamValidationError as param_exceptions:
+        except Exception as exceptions:
             # Print error while parsing parameters
-            print("Error - " + str(param_exceptions))
+            print("Error - " + str(exceptions))
 
             # Exit from function
             return
@@ -126,6 +127,19 @@ class ETL_Process():
 
     def load_data_postgre(self, message_list):
         """Function to load data to postgres"""
+
+        # Check if "message_list" is empty
+        try:
+            if len(message_list) == 0:
+                # Raise Type Error
+                raise TypeError
+        except TypeError as type_error:
+            # Print the "message_list" is empty
+            print("Error - " + str(type_error))
+
+            # Return from the function
+            return
+
 
         # Connect to PostgreSQL
         postgres_conn = psycopg2.connect(
