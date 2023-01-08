@@ -5,32 +5,32 @@ This project is the solution for the Data Engineering assignment given in the be
 https://bitbucket.org/fetchrewards/data-engineering-take-home/src/master/
 
 ## To run the code
-1. Clone this repo
+1. Clone this repo.
 ```bash
 git clone https://github.com/prasadashu/data-engineering-fetch-rewards.git
 ```
 
-2. Go into the cloned repo
+2. Go into the cloned repo.
 ```bash
 cd data-engineering-fetch-rewards
 ```
 
-3. Run `make` command to install dependencies
+3. Run `make` command to install dependencies.
 ```bash
 make pip-install
 ```
 
-4. Run `make` command to configure aws shell
+4. Run `make` command to configure aws shell.
 ```bash
 make aws-configure
 ```
 
-5. Pull and start docker containers
+5. Pull and start docker containers.
 ```bash
 make start
 ```
 
-6. Run Python code to perform ETL process
+6. Run Python code to perform ETL process.
 ```bash
 make perform-etl
 ```
