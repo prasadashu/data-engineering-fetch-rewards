@@ -90,15 +90,15 @@ class ETL_Process():
         # Decalre empty message list
         message_list = []
 
-        # Check if "messages" list is empty
         try:
+            # Check if "messages" list is empty
             if len(messages) == 0:
-                # Raise TypeError
-                raise TypeError("Message list is empty")
+                # Raise IndexError
+                raise IndexError("Message list is empty")
                 
-        except TypeError as type_error:
+        except IndexError as index_error:
             # Print the message is empty
-            print("Error - " + str(type_error))
+            print("Error - " + str(index_error))
 
             # Exit from program
             sys.exit()
@@ -109,8 +109,15 @@ class ETL_Process():
             message_body = json.loads(message['Body'])
 
             # Get "ip" and "device_id" of message
-            ip = message_body['ip']
-            device_id = message_body['device_id']
+            try:
+                ip = message_body['ip']
+                device_id = message_body['device_id']
+            except Exception as exception:
+                # Print message is invalid
+                print("Error - Message is invalid - " + str(exception) + " is not available in queue")
+
+                # Continue to next message
+                continue
 
             # Encode "ip" and "device_id"
             base64_ip = self.base64_encode(ip)
