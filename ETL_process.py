@@ -103,8 +103,14 @@ class ETL_Process():
             # Exit from program
             sys.exit()
 
+        # Declare message counter variable
+        message_count = 0
+
         # Iterate through the messages
         for message in messages:
+            # Increment the message counter
+            message_count += 1
+
             # Get "Body" of the message into JSON/Dictionary format
             message_body = json.loads(message['Body'])
 
@@ -114,7 +120,7 @@ class ETL_Process():
                 device_id = message_body['device_id']
             except Exception as exception:
                 # Print message is invalid
-                print("Error - Message is invalid - " + str(exception) + " is not available in queue")
+                print("Error - Message " + str(message_count) + " is invalid - " + str(exception) + " is not available in queue")
 
                 # Continue to next message
                 continue
