@@ -1,0 +1,31 @@
+1. Inserting "app_version"
+	a. Convert app_version to integer with only the first character - Loss of information
+	b. Change datatype in Postgres
+
+1.1 Describe table datatype
+>> SELECT table_name, column_name, data_type FROM information_schema.columns WHERE table_name = 'user_logins';
+
+1.2 Change table datatype
+>> ALTER TABLE user_logins ALTER COLUMN app_version TYPE varchar(5);
+
+---
+2. botocore.exceptions.NoRegionError: You must specify a region
+- Error occurs as there is no region configured for the user.
+	- We will have to configure a profile to use this command.
+
+>> aws configure --profile <name_of_the_profile>
+
+2.1 How to make this inline?
+- Run a bash script
+```
+#!/bin/bash
+
+aws configure set profile.default.aws_access_key_id data_engineering_id_key
+aws configure set profile.default.aws_secret_access_key data_engineering_secret_key
+aws configure set profile.default.region us-east-1
+```
+
+3. Choosing not to dockerize the Python ETL file
+- We are choosing not to dockerize the Python ETL file as it is not a constantly running process.
+- If at all there is some logic to constantly poll the SQS Queue for new messages, we can make the process to constantly run.
+- In such a case, we can dockerize the program.
