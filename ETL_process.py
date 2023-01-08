@@ -6,8 +6,6 @@ import configparser
 import argparse
 import sys
 from datetime import datetime
-from botocore import exceptions
-from botocore import errorfactory
 
 class ETL_Process():
     """Class for performing ETL Process"""
@@ -81,7 +79,7 @@ class ETL_Process():
         # Get messages from SQS
         messages = response['Messages']
         
-        # Return from function
+        # Return the messages
         return messages
 
     def transform_data(self, messages):
@@ -136,7 +134,7 @@ class ETL_Process():
             # Append data to message list
             message_list.append(message_body)
 
-        # Return from function
+        # Return the message list
         return message_list
 
     def load_data_postgre(self, message_list):
@@ -154,8 +152,7 @@ class ETL_Process():
             # Exit from program
             sys.exit()
 
-
-        # Connect to PostgreSQL
+        # Connect to Postgres
         postgres_conn = psycopg2.connect(
             host = self.base64_encode(self.__host, action="decode"),
             database = self.base64_encode(self.__database, action="decode"),
@@ -168,7 +165,7 @@ class ETL_Process():
 
         # Iterate through messages
         for message_json in message_list:
-            # Remove 'None Type' values
+            # Replaced 'None Type' values with 'None' string
             message_json['locale'] = 'None' if message_json['locale'] == None else message_json['locale']
             # Set 'create_date' field as current date
             message_json['create_date'] = datetime.now().strftime("%Y-%m-%d")
